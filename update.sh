@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Update brew
-brew update && brew upgrade --cleanup && brew cleanup
-brew cask upgrade && brew cask cleanup
+brew update && brew upgrade --cleanup
+brew cask upgrade
+brew cleanup
 # brew prune
 
 # Update global composer
