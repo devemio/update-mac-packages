@@ -5,7 +5,7 @@ This script allows you to update the following global packages:
 - [npm](https://www.npmjs.com) - dependency manager for js
 - [valet](https://laravel.com/docs/master/valet) - laravel development environment for mac minimalists
 
-### Update packages
+#### Update packages
 
 ```bash
 bash update.sh
