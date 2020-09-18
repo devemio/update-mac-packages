@@ -7,9 +7,7 @@ function log {
 
 # Brew
 log 'Update brew packages'
-brew update && brew upgrade
-brew cask upgrade
-brew cleanup
+brew update && brew upgrade && brew cask upgrade && brew cleanup
 
 # Composer
 log 'Update global composer packages'
@@ -17,9 +15,9 @@ composer global update
 
 # Npm
 log 'Update npm and global packages'
-npm install -g npm
-npm update -g
-npm outdated -g --depth=0 | awk '{ print $1 }' | tail -n +2 | xargs npm -g install
+# npm install -g npm
+# npm update -g
+npm outdated -g --depth=0 | awk '{ print $1 }' | tail -n +2 | xargs npm -g install --force
 
 # Valet
 log 'Update valet'
