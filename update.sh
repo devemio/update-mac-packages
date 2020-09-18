@@ -7,7 +7,7 @@ function log {
 
 # Brew
 log 'Update brew packages'
-brew update && brew upgrade && brew cask upgrade && brew cleanup
+brew update && brew upgrade && brew cleanup
 
 # Composer
 log 'Update global composer packages'
