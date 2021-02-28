@@ -9,6 +9,9 @@ function log {
 log 'Update brew packages'
 brew update && brew upgrade && brew cleanup
 
+# Casks
+# brew list --cask | grep -v 'font-' | xargs brew upgrade --cask
+
 # Composer
 log 'Update global composer packages'
 composer global update
